@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nani Editor – Tạo Lyrics 2 ảnh lướt nối tiếp TikTok</title>
+  <link rel="icon" type="image/webp" href="https://nanieditorapp.github.io/logonani.webp">
+  <meta name="description" content="Nani Editor giúp bạn tạo lyrics 2 ảnh lướt nối tiếp đẹp mắt cho TikTok và mạng xã hội ngay trên điện thoại.">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' rel='stylesheet'/>
+ 
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(circle at 10% 10%,rgb(139 92 246 / .22),transparent 30%),radial-gradient(circle at 90% 20%,rgb(236 72 153 / .18),transparent 30%),#080811;color:#fff;line-height:1.6;overflow-x:hidden}.bg-orb{position:fixed;width:280px;height:280px;border-radius:50%;filter:blur(90px);opacity:.25;pointer-events:none;z-index:-1}.orb-1{background:#8b5cf6;top:10%;left:-100px}.orb-2{background:#ec4899;bottom:5%;right:-100px}.container{width:min(1100px, calc(100% - 32px));margin:auto}.navbar{position:sticky;top:0;z-index:100;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);background:rgb(8 8 17 / .78);border-bottom:1px solid rgb(255 255 255 / .07)}.nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:800}.logo-icon{position:relative;width:45px;height:45px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#e60023;box-shadow:0 10px 25px rgb(0 0 0 / .2)}.nav-right{display:flex;align-items:center;gap:10px}.language{position:relative}.language-btn{display:flex;align-items:center;gap:7px;padding:9px 13px;border-radius:12px;background:rgb(255 255 255 / .06);border:1px solid rgb(255 255 255 / .1);color:#fff;font-size:13px;font-weight:600;cursor:pointer;transition:.25s}.language-btn:hover{background:rgb(255 255 255 / .12)}@font-face{font-family:BabelStoneFlags;src:url(https://cdn.jsdelivr.net/gh/nanieditorapp/nanieditorapp.github.io@main/font/BabelStoneFlags.ttf)}.flag{font-family:'BabelStoneFlags',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-size:17px}.arrow{font-size:10px;opacity:.7}.language-menu{position:absolute;top:calc(100% + 8px);right:0;min-width:150px;padding:6px;border-radius:15px;background:rgb(22 22 34 / .96);border:1px solid rgb(255 255 255 / .1);box-shadow:0 20px 50px rgb(0 0 0 / .45);backdrop-filter:blur(20px);opacity:0;visibility:hidden;transform:translateY(-5px);transition:.2s}.language.open .language-menu{opacity:1;visibility:visible;transform:translateY(0)}.language-option{width:100%;display:flex;align-items:center;gap:9px;padding:10px 11px;border:0;border-radius:10px;background:#fff0;color:#ddd;text-align:left;cursor:pointer;font-size:13px}.language-option:hover{background:rgb(255 255 255 / .08);color:#fff}.language-option.active{background:rgb(139 92 246 / .16);color:#c4b5fd}.nav-download{text-decoration:none;color:#fff;padding:9px 16px;border-radius:999px;background:rgb(255 255 255 / .08);border:1px solid rgb(255 255 255 / .12);font-size:13px;font-weight:600;transition:.25s}.nav-download:hover{background:rgb(255 255 255 / .15)}.hero{min-height:680px;display:flex;align-items:center;padding:70px 0 80px}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:60px}.badge{display:inline-flex;align-items:center;gap:7px;padding:7px 13px;margin-bottom:22px;border-radius:999px;background:rgb(139 92 246 / .12);border:1px solid rgb(139 92 246 / .28);color:#d8c7ff;font-size:13px;font-weight:600}.badge span{width:7px;height:7px;border-radius:50%;background:#a78bfa;box-shadow:0 0 12px #a78bfa}.hero h1{font-size:clamp(42px, 6vw, 72px);line-height:1.05;letter-spacing:-3px;margin-bottom:22px}.gradient-text{background:linear-gradient(90deg,#a78bfa,#f472b6,#fb7185);-webkit-background-clip:text;background-clip:text;color:#fff0}.hero-description{max-width:580px;color:#a7a7b7;font-size:17px;margin-bottom:30px}.buttons{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 21px;border-radius:14px;text-decoration:none;font-weight:700;font-size:14px;transition:.25s}.btn-primary{color:#fff;background:linear-gradient(135deg,#7c3aed,#db2777);box-shadow:0 12px 35px rgb(124 58 237 / .28)}.btn-primary:hover{transform:translateY(-3px);box-shadow:0 18px 45px rgb(124 58 237 / .4)}.btn-secondary{color:#eee;background:rgb(255 255 255 / .06);border:1px solid rgb(255 255 255 / .1)}.btn-secondary:hover{background:rgb(255 255 255 / .1)}.phone-area{display:flex;justify-content:center}.phone{width:270px;height:540px;padding:9px;border-radius:38px;background:linear-gradient(145deg,#2a2a35,#101016);border:1px solid rgb(255 255 255 / .18);box-shadow:0 40px 90px rgb(0 0 0 / .65),0 0 60px rgb(139 92 246 / .18);transform:rotate(3deg);animation:floating 5s ease-in-out infinite}.phone-screen{width:100%;height:100%;border-radius:30px;overflow:hidden;background:#111;position:relative}.phone-screen img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}.phone-screen::before{content:"";position:absolute;width:180px;height:180px;background:#a855f7;filter:blur(70px);top:80px;left:30px;opacity:.4}.phone-content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:28px 20px}.lyric-label{font-size:11px;letter-spacing:2px;color:#d8b4fe;text-transform:uppercase;margin-bottom:10px}.lyric-title{font-size:28px;font-weight:800;margin-bottom:18px}.lyric-text{color:#ddd;font-size:14px;padding-bottom:20px}.slide-indicator{display:flex;gap:6px}.slide-indicator i{width:28px;height:4px;border-radius:99px;background:rgb(255 255 255 / .25)}.slide-indicator i:first-child{background:#fff}@keyframes floating{0%,100%{transform:translateY(0) rotate(3deg)}50%{transform:translateY(-14px) rotate(3deg)}}section{padding:90px 0}.section-title{text-align:center;max-width:700px;margin:0 auto 45px}.section-title h2{font-size:clamp(30px, 5vw, 46px);letter-spacing:-1.5px;margin-bottom:12px}.section-title p{color:#99a}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:25px;border-radius:22px;background:linear-gradient(145deg,rgb(255 255 255 / .075),rgb(255 255 255 / .025));border:1px solid rgb(255 255 255 / .08);backdrop-filter:blur(15px);transition:.3s}.feature:hover{transform:translateY(-6px);border-color:rgb(167 139 250 / .35)}.feature-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:rgb(139 92 246 / .14);font-size:22px;margin-bottom:18px}.feature h3{font-size:17px;margin-bottom:8px}.feature p{color:#9696a6;font-size:14px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{padding:25px;border-radius:20px;background:rgb(255 255 255 / .035);border:1px solid rgb(255 255 255 / .07)}.step-number{font-size:12px;color:#a78bfa;font-weight:800;margin-bottom:14px}.step h3{margin-bottom:8px}.step p{color:#9696a6;font-size:14px}.highlight{padding:55px 30px;text-align:center;border-radius:30px;background:radial-gradient(circle at center,rgb(139 92 246 / .2),transparent 65%),rgb(255 255 255 / .035);border:1px solid rgb(255 255 255 / .08)}.highlight h2{font-size:clamp(30px, 5vw, 45px);letter-spacing:-1.5px;margin-bottom:12px}.highlight p{color:#a1a1b0;max-width:600px;margin:auto auto 25px}.quote{margin-top:35px;color:#ddd;font-size:18px;font-style:italic}footer{padding:35px 0;border-top:1px solid rgb(255 255 255 / .07);text-align:center;color:#777786;font-size:13px}@media (max-width:800px){.hero{padding:55px 0 65px}.hero-grid{grid-template-columns:1fr;text-align:center;gap:45px}.hero-description{margin-left:auto;margin-right:auto}.buttons{justify-content:center}.phone-area{order:-1}.phone{width:235px;height:470px}.features{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}@media (max-width:520px){.container{width:min(100% - 24px, 1100px)}.nav-inner{height:64px}.logo{font-size:18px}.logo-icon{width:36px;height:36px}.nav-right{gap:6px}.language-btn{padding:8px 10px}.nav-download{padding:8px 11px;font-size:12px}.hero{padding-top:35px}.hero h1{font-size:43px;letter-spacing:-2px}.hero-description{font-size:15px}.buttons{flex-direction:column}.btn{width:100%}.phone{width:215px;height:430px;border-radius:32px}.features,.steps{grid-template-columns:1fr}section{padding:65px 0}.highlight{padding:40px 20px;border-radius:24px}}
+  </style>
+</head>
+
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <div class="logo-icon"><img src="https://nanieditorapp.github.io/logonani.webp" width="40"></div><span>Nani Editor</span>
+      </div>
+      <div class="nav-right">
+        <!-- LANGUAGE -->
+        <div class="language" id="language"><button class="language-btn" id="languageBtn" type="button"><span class="flag" id="currentFlag">🇻🇳</span><span id="currentLanguage"> Tiếng Việt </span><span class="arrow">▼</span></button>
+          <div class="language-menu"><button class="language-option active flag" data-lang="vi"> 🇻🇳 <span>Tiếng Việt</span></button><button class="language-option flag" data-lang="en"> 🇬🇧 <span>English</span></button></div>
+        </div><a class="nav-download" data-i18n="navDownload" href="https://play.google.com/store/apps/details?id=com.taoanhfree.nanieditor" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i>  Tải ứng dụng </a>
+      </div>
+    </div>
+  </nav><!-- HERO -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge"><span></span>
+          <p data-i18n="badge"> Lyrics 2 ảnh lướt nối tiếp </p>
+        </div>
+        <h1 data-i18n="heroTitle"> Biến lời bài hát thành <span class="gradient-text"> những bức ảnh tuyệt đẹp. </span></h1>
+        <p class="hero-description" data-i18n="heroDescription"> Nani Editor giúp bạn dễ dàng tạo lyrics 2 ảnh lướt nối tiếp, thêm hình ảnh, font chữ, sticker để tạo nội dung nổi bật cho TikTok và mạng xã hội. </p>
+        <div class="buttons"><a class="btn btn-primary" data-i18n="downloadGoogle" href="https://play.google.com/store/apps/details?id=com.taoanhfree.nanieditor" target="_blank" rel="noopener"> ▶ Tải trên Google Play </a><a class="btn btn-secondary" data-i18n="explore" href="#features"> Khám phá tính năng </a></div>
+      </div><!-- PHONE -->
+<div class="phone-area">
+    <div class="phone">
+        <div class="phone-screen">
+            <img
+                src="./img/nanimh.png"
+                alt="Nani Editor app screenshot"
+            >
+        </div>
+    </div>
+</div>
+    </div>
+  </header>
+  <section id="features">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="featuresTitle"> Mọi thứ bạn cần để <span class="gradient-text"> tạo lyrics đẹp </span></h2>
+        <p data-i18n="featuresSubtitle"> Thiết kế đơn giản, dễ sử dụng và tối ưu cho màn hình điện thoại. </p>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">🎵</div>
+          <h3 data-i18n="f1Title"> Lyrics 2 ảnh </h3>
+          <p data-i18n="f1Text"> Tạo hai hình ảnh lyrics liền mạch để lướt qua lại đầy ấn tượng. </p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔤</div>
+          <h3 data-i18n="f2Title"> Tùy chỉnh văn bản </h3>
+          <p data-i18n="f2Text"> Thêm tiêu đề, ca sĩ và lời bài hát với font chữ theo phong cách riêng. </p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🖼️</div>
+          <h3 data-i18n="f3Title"> Thêm hình ảnh </h3>
+          <p data-i18n="f3Text"> Chèn hình ảnh, điều chỉnh vị trí, vùng hiển thị và khung ảnh. </p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">✨</div>
+          <h3 data-i18n="f4Title"> Sticker </h3>
+          <p data-i18n="f4Text"> Trang trí lyrics bằng sticker để thiết kế sinh động hơn. </p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🌫️</div>
+          <h3 data-i18n="f5Title"> Hiệu ứng Blur </h3>
+          <p data-i18n="f5Text"> Làm mờ nền và tạo chiều sâu cho thiết kế của bạn. </p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <h3 data-i18n="f6Title"> Lưu nhanh </h3>
+          <p data-i18n="f6Text"> Tự động chia thiết kế thành 2 ảnh và lưu về điện thoại. </p>
+        </div>
+      </div>
+    </div>
+  </section><!-- STEPS -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="stepsTitle"> Tạo ảnh chỉ với <span class="gradient-text"> 4 bước </span></h2>
+        <p data-i18n="stepsSubtitle"> Không cần phần mềm chỉnh sửa ảnh phức tạp. </p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number" data-i18n="step1Number"> 01 / CHỌN ẢNH </div>
+          <h3 data-i18n="step1Title"> Chọn nền </h3>
+          <p data-i18n="step1Text"> Chọn ảnh từ điện thoại hoặc sử dụng màu nền yêu thích. </p>
+        </div>
+        <div class="step">
+          <div class="step-number" data-i18n="step2Number"> 02 / THÊM LYRICS </div>
+          <h3 data-i18n="step2Title"> Nhập lời bài hát </h3>
+          <p data-i18n="step2Text"> Thêm tên bài hát, ca sĩ và nội dung lyrics. </p>
+        </div>
+        <div class="step">
+          <div class="step-number" data-i18n="step3Number"> 03 / TRANG TRÍ </div>
+          <h3 data-i18n="step3Title"> Tạo phong cách </h3>
+          <p data-i18n="step3Text"> Thêm font chữ, hình ảnh, sticker. </p>
+        </div>
+        <div class="step">
+          <div class="step-number" data-i18n="step4Number"> 04 / LƯU ẢNH </div>
+          <h3 data-i18n="step4Title"> Chia sẻ </h3>
+          <p data-i18n="step4Text"> Lưu thành 2 ảnh hoàn chỉnh và sử dụng ngay. </p>
+        </div>
+      </div>
+    </div>
+  </section><!-- DOWNLOAD -->
+  <section>
+    <div class="container">
+      <div class="highlight">
+        <h2 data-i18n="downloadTitle"> Sẵn sàng tạo lyrics <span class="gradient-text"> của riêng bạn? </span></h2>
+        <p data-i18n="downloadText"> Tải Nani Editor và biến những câu hát yêu thích thành những hình ảnh đẹp mắt để chia sẻ trên TikTok và mạng xã hội. </p><a class="btn btn-primary" data-i18n="downloadButton" href="https://play.google.com/store/apps/details?id=com.taoanhfree.nanieditor" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i> Tải Nani Editor trên Google Play </a>
+        <div class="quote" data-i18n="quote"> “Your lyrics. Your style. Your story.” </div>
+      </div>
+    </div>
+  </section><!-- FOOTER -->
+  <footer>
+    <div class="container"><span data-i18n="footer"> © 2026 Nani Editor · Create. Customize. Share. </span></div>
+  </footer>
+  <script>
+    const translations = {
+      vi: {
+        navDownload: "Tải ứng dụng",
+        badge: "Lyrics 2 ảnh lướt nối tiếp",
+        heroTitle: `Biến lời bài hát thành <span class="gradient-text"> những bức ảnh tuyệt đẹp. </span>`,
+        heroDescription: `Nani Editor giúp bạn dễ dàng tạo lyrics 2 ảnh lướt nối tiếp, thêm hình ảnh, font chữ, sticker để tạo nội dung nổi bật cho TikTok và mạng xã hội.`,
+        downloadGoogle: "<i class='fa-brands fa-google-play'></i> Tải trên Google Play",
+        explore: "Khám phá tính năng",
+        featuresTitle: `Mọi thứ bạn cần để <span class="gradient-text"> tạo lyrics đẹp </span>`,
+        featuresSubtitle: "Thiết kế đơn giản, dễ sử dụng và tối ưu cho màn hình điện thoại.",
+        f1Title: "Lyrics 2 ảnh",
+        f1Text: "Tạo hai hình ảnh lyrics liền mạch để lướt qua lại đầy ấn tượng.",
+        f2Title: "Tùy chỉnh văn bản",
+        f2Text: "Thêm tiêu đề, ca sĩ và lời bài hát với font chữ theo phong cách riêng.",
+        f3Title: "Thêm hình ảnh",
+        f3Text: "Chèn hình ảnh, điều chỉnh vị trí, vùng hiển thị và khung ảnh.",
+        f4Title: "Sticker",
+        f4Text: "Trang trí lyrics bằng sticker để thiết kế sinh động hơn.",
+        f5Title: "Hiệu ứng Blur",
+        f5Text: "Làm mờ nền và tạo chiều sâu cho thiết kế của bạn.",
+        f6Title: "Lưu nhanh",
+        f6Text: "Tự động chia thiết kế thành 2 ảnh và lưu về điện thoại.",
+        stepsTitle: `Tạo ảnh chỉ với <span class="gradient-text"> 4 bước </span>`,
+        stepsSubtitle: "Không cần phần mềm chỉnh sửa ảnh phức tạp.",
+        step1Number: "01 / CHỌN ẢNH",
+        step1Title: "Chọn nền",
+        step1Text: "Chọn ảnh từ điện thoại hoặc sử dụng màu nền yêu thích.",
+        step2Number: "02 / THÊM LYRICS",
+        step2Title: "Nhập lời bài hát",
+        step2Text: "Thêm tên bài hát, ca sĩ và nội dung lyrics.",
+        step3Number: "03 / TRANG TRÍ",
+        step3Title: "Tạo phong cách",
+        step3Text: "Thêm font chữ, hình ảnh, sticker.",
+        step4Number: "04 / LƯU ẢNH",
+        step4Title: "Chia sẻ",
+        step4Text: "Lưu thành 2 ảnh hoàn chỉnh và sử dụng ngay.",
+        downloadTitle: `Sẵn sàng tạo lyrics <span class="gradient-text"> của riêng bạn? </span>`,
+        downloadText: "Tải Nani Editor và biến những câu hát yêu thích thành những hình ảnh đẹp mắt để chia sẻ trên TikTok và mạng xã hội.",
+        downloadButton: "<i class='fa-brands fa-google-play'></i> Tải Nani Editor trên Google Play",
+        quote: "“Your lyrics. Your style. Your story.”",
+        footer: "© 2026 Nani Editor · Create. Customize. Share."
+      },
+      en: {
+        navDownload: "Download",
+        badge: "Two-Image Swipe Lyrics",
+        heroTitle: `Turn your favorite lyrics into <span class="gradient-text"> beautiful visual stories. </span>`,
+        heroDescription: `Nani Editor makes it easy to create stylish two-image swipe lyrics, add photos, fonts, stickers to create eye-catching content for TikTok and social media.`,
+        downloadGoogle: "<i class='fa-brands fa-google-play'></i> Get it on Google Play",
+        explore: "Explore Features",
+        featuresTitle: `Everything you need to <span class="gradient-text"> create beautiful lyrics </span>`,
+        featuresSubtitle: "Simple, easy to use and designed for your phone.",
+        f1Title: "Two-Image Lyrics",
+        f1Text: "Create two connected lyric images designed to swipe between seamlessly.",
+        f2Title: "Custom Text",
+        f2Text: "Add song titles, artists and lyrics with fonts that match your style.",
+        f3Title: "Add Images",
+        f3Text: "Insert images and easily adjust their position, visible area and frame.",
+        f4Title: "Stickers",
+        f4Text: "Decorate your lyrics with stickers and make your designs more lively.",
+        f5Title: "Blur Effects",
+        f5Text: "Blur the background and add more depth to your visual designs.",
+        f6Title: "Quick Export",
+        f6Text: "Automatically split your design into two separate images and save them to your phone.",
+        stepsTitle: `Create your images in <span class="gradient-text"> 4 simple steps </span>`,
+        stepsSubtitle: "No complicated photo editing software required.",
+        step1Number: "01 / CHOOSE IMAGE",
+        step1Title: "Choose a Background",
+        step1Text: "Select an image from your phone or choose your favorite background color.",
+        step2Number: "02 / ADD LYRICS",
+        step2Title: "Add Your Lyrics",
+        step2Text: "Enter the song title, artist name and your favorite lyrics.",
+        step3Number: "03 / CUSTOMIZE",
+        step3Title: "Create Your Style",
+        step3Text: "Add fonts, images, stickers to make your design unique.",
+        step4Number: "04 / SAVE",
+        step4Title: "Share",
+        step4Text: "Save your finished design as two separate images and share them anywhere.",
+        downloadTitle: `Ready to create your <span class="gradient-text"> own lyrics? </span>`,
+        downloadText: "Download Nani Editor and turn your favorite lyrics into beautiful visual content for TikTok and social media.",
+        downloadButton: "<i class='fa-brands fa-google-play'></i> Get Nani Editor on Google Play",
+        quote: "“Your lyrics. Your style. Your story.”",
+        footer: "© 2026 Nani Editor · Create. Customize. Share."
+      }
+    }; /* LANGUAGE MENU */
+    const language = document.getElementById("language");
+    const languageBtn = document.getElementById("languageBtn");
+    const currentFlag = document.getElementById("currentFlag");
+    const currentLanguage = document.getElementById("currentLanguage");
+    const options = document.querySelectorAll(".language-option");
+    languageBtn.addEventListener("click", function(e) {
+      e.stopPropagation();
+      language.classList.toggle("open");
+    });
+    document.addEventListener("click", function() {
+      language.classList.remove("open");
+    });
+    options.forEach(function(option) {
+      option.addEventListener("click", function(e) {
+        e.stopPropagation();
+        const lang = option.dataset.lang;
+        setLanguage(lang);
+        language.classList.remove("open");
+      });
+    }); /* CHANGE LANGUAGE */
+    function setLanguage(lang) {
+      const data = translations[lang];
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-i18n]").forEach(function(element) {
+        const key = element.dataset.i18n;
+        if (data[key]) {
+          element.innerHTML = data[key];
+        }
+      });
+      if (lang === "vi") {
+        currentFlag.textContent = "🇻🇳";
+        currentLanguage.textContent = "Tiếng Việt";
+      } else {
+        currentFlag.textContent = "🇬🇧";
+        currentLanguage.textContent = "English";
+      }
+      options.forEach(function(option) {
+        option.classList.toggle("active", option.dataset.lang === lang);
+      });
+      localStorage.setItem("nani-language", lang);
+    } /* LOAD SAVED LANGUAGE */
+    const savedLanguage = localStorage.getItem("nani-language");
+    if (savedLanguage === "en") {
+      setLanguage("en");
+    } else {
+      setLanguage("vi");
+    }
+  </script>
+</body>
+
+</html>
