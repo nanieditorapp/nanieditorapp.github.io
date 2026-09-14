@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/webp" href="https://nanieditorapp.github.io/logonani.webp">
   <title>Nani Editor - Privacy Policy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
   <style>
     * {
       margin: 0;
@@ -14,9 +17,21 @@
       box-sizing: border-box;
     }
 
+    html {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
     body {
+      width: 100%;
       font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at top, #ffb3b3 0, #ff6b6b 20%, #ff3b3b 45%, #b30000 100%);
+      background: radial-gradient(
+        circle at top,
+        #ffb3b3 0,
+        #ff6b6b 20%,
+        #ff3b3b 45%,
+        #b30000 100%
+      );
       min-height: 100vh;
       padding: 60px 15px;
       color: #333;
@@ -51,6 +66,7 @@
     }
 
     .container {
+      width: 100%;
       max-width: 920px;
       margin: auto;
       background: #fff;
@@ -104,6 +120,16 @@
       font-size: 40px;
       color: #e60023;
       box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+      overflow: hidden;
+    }
+
+    .logo img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      width: 100px;
+      height: auto;
+      object-fit: contain;
     }
 
     .header h1 {
@@ -126,6 +152,7 @@
     }
 
     .card {
+      width: 100%;
       background: #fff;
       padding: 28px;
       margin-bottom: 22px;
@@ -152,6 +179,8 @@
     .card p {
       line-height: 1.9;
       color: #555;
+      overflow-wrap: break-word;
+      word-break: normal;
     }
 
     .card ul {
@@ -164,7 +193,9 @@
       line-height: 1.8;
     }
 
+    /* Notice */
     .notice {
+      width: 100%;
       margin-top: 18px;
       padding: 18px;
       background: #fff2f2;
@@ -172,16 +203,41 @@
       border-radius: 14px;
       color: #b00000;
       font-weight: 500;
+
+      /* Chống tràn URL */
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      white-space: normal;
+    }
+
+    .notice a {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      color: #b00000;
+      font-weight: 700;
+      text-decoration: none;
+
+      /* Cho phép URL dài tự xuống dòng */
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      white-space: normal;
+    }
+
+    .notice a:hover {
+      text-decoration: underline;
     }
 
     /* Contact */
     .contact {
+      width: 100%;
       margin-top: 10px;
       background: linear-gradient(135deg, #ff4040, #b30000);
       padding: 30px;
       border-radius: 20px;
       text-align: center;
       color: #fff;
+      overflow: hidden;
     }
 
     .contact h3 {
@@ -189,11 +245,21 @@
       margin-bottom: 10px;
     }
 
+    .contact p {
+      max-width: 100%;
+    }
+
     .contact a {
+      display: inline-block;
+      max-width: 100%;
+
       color: #fff;
       font-size: 20px;
       font-weight: 700;
       text-decoration: none;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      white-space: normal;
     }
 
     .contact a:hover {
@@ -208,9 +274,22 @@
       color: #999;
       font-size: 14px;
       border-top: 1px solid #eee;
+
+      overflow-wrap: break-word;
+      word-break: normal;
     }
 
-    @media(max-width:768px) {
+    /* Tablet */
+    @media (max-width: 768px) {
+
+      body {
+        padding: 30px 12px;
+      }
+
+      .container {
+        border-radius: 22px;
+      }
+
       .header {
         padding: 50px 25px;
       }
@@ -225,6 +304,10 @@
         font-size: 34px;
       }
 
+      .logo img {
+        width: 70px;
+      }
+
       .content {
         padding: 20px;
       }
@@ -236,52 +319,276 @@
       .card h2 {
         font-size: 21px;
       }
+
+      .notice {
+        padding: 16px;
+        font-size: 14px;
+      }
+
+      .contact {
+        padding: 25px 18px;
+      }
+
+      .contact a {
+        font-size: 17px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+
+      body {
+        padding: 15px 8px;
+      }
+
+      .container {
+        border-radius: 18px;
+      }
+
+      .header {
+        padding: 40px 18px;
+      }
+
+      .header h1 {
+        font-size: 30px;
+        line-height: 1.2;
+      }
+
+      .header p {
+        font-size: 14px;
+      }
+
+      .logo {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+      }
+
+      .logo img {
+        width: 65px;
+      }
+
+      .content {
+        padding: 14px;
+      }
+
+      .card {
+        padding: 18px;
+        margin-bottom: 16px;
+        border-left-width: 5px;
+      }
+
+      .card h2 {
+        font-size: 19px;
+        gap: 8px;
+      }
+
+      .card p {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .card li {
+        font-size: 14px;
+      }
+
+      .notice {
+        padding: 14px;
+        font-size: 13px;
+        line-height: 1.7;
+      }
+
+      .notice a {
+        font-size: 13px;
+      }
+
+      .contact {
+        padding: 22px 14px;
+        border-radius: 16px;
+      }
+
+      .contact h3 {
+        font-size: 22px;
+      }
+
+      .contact p {
+        font-size: 14px;
+      }
+
+      .contact a {
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      .footer {
+        padding: 20px 12px;
+        font-size: 12px;
+      }
+    }
+
+    /* Điện thoại rất nhỏ */
+    @media (max-width: 360px) {
+
+      body {
+        padding: 8px 5px;
+      }
+
+      .content {
+        padding: 10px;
+      }
+
+      .card {
+        padding: 15px;
+      }
+
+      .header h1 {
+        font-size: 27px;
+      }
+
+      .notice {
+        padding: 12px;
+        font-size: 12px;
+      }
+
+      .notice a {
+        font-size: 12px;
+      }
+
+      .contact {
+        padding: 20px 10px;
+      }
+
+      .contact a {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <div class="container">
+
+    <!-- Header -->
     <div class="header">
-      <div class="logo"><img src="https://nanieditorapp.github.io/logonani.webp" width="100" /></div>
+
+      <div class="logo">
+        <img src="https://nanieditorapp.github.io/logonani.webp"
+          width="100"
+          alt="Nani Editor Logo">
+      </div>
+
       <h1>Privacy Policy</h1>
+
       <p><b>Nani Editor</b></p>
+
       <p>Effective Date: July 27, 2026</p>
+
     </div>
+
     <div class="content">
       <div class="card">
+
         <h2>📸 Information We Collect</h2>
-        <p> Nani Editor allows you to edit images stored on your device. The application only requests permission to access your photos so you can select and save edited images. </p>
+
+        <p>
+          Nani Editor allows you to edit images stored on your device.
+          The application only requests permission to access your photos
+          so you can select and save edited images.
+        </p>
+
         <ul>
           <li>Your photos stay on your device.</li>
           <li>We do not upload your photos to any server.</li>
           <li>We do not collect personal information from your images.</li>
         </ul>
+
       </div>
       <div class="card">
+
         <h2>📢 Advertising</h2>
-        <p> Nani Editor uses <b>Google AdMob</b> to display advertisements. Google may collect non-personal information such as device information, advertising ID, app usage statistics, approximate location, and diagnostic data. </p>
-        <div class="notice"> Learn more about Google's Privacy Policy:<br><br><b>https://policies.google.com/privacy</b></div>
+
+        <p>
+          Nani Editor uses <b>Google AdMob</b> to display advertisements.
+          Google may collect non-personal information such as device
+          information, advertising ID, app usage statistics, approximate
+          location, and diagnostic data.
+        </p>
+
+        <div class="notice">
+
+          Learn more about Google's Privacy Policy:
+
+          <br><br>
+
+          <a href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer">
+            https://policies.google.com/privacy
+          </a>
+
+        </div>
+
       </div>
+
       <div class="card">
+
         <h2>🔒 Data Security</h2>
-        <p> Your photos are processed locally on your device. We never upload or store your images. Reasonable security measures are used to protect your information. </p>
+
+        <p>
+          Your photos are processed locally on your device.
+          We never upload or store your images.
+          Reasonable security measures are used to protect your information.
+        </p>
+
       </div>
+
       <div class="card">
+
         <h2>👶 Children's Privacy</h2>
-        <p> Nani Editor is not intended for children under 13 years old. We do not knowingly collect personal information from children. </p>
+
+        <p>
+          Nani Editor is not intended for children under 13 years old.
+          We do not knowingly collect personal information from children.
+        </p>
+
       </div>
+
       <div class="card">
+
         <h2>✏️ Changes to This Policy</h2>
-        <p> We may update this Privacy Policy from time to time. Any changes will be reflected on this page together with the updated effective date. </p>
+
+        <p>
+          We may update this Privacy Policy from time to time.
+          Any changes will be reflected on this page together with
+          the updated effective date.
+        </p>
+
       </div>
       <div class="contact">
+
         <h3>📧 Contact Us</h3>
-        <p>If you have any questions, please contact:</p><br><a href="mailto:redscreentranslator@gmail.com"> redscreentranslator@gmail.com </a>
+
+        <p>
+          If you have any questions, please contact:
+        </p>
+
+        <br>
+
+        <a href="mailto:redscreentranslator@gmail.com">
+          redscreentranslator@gmail.com
+        </a>
+
       </div>
+
     </div>
-    <div class="footer"> © 2026 <b>Nani Editor</b>. All Rights Reserved. </div>
+
+    <div class="footer">
+      © 2026 <b>Nani Editor</b>. All Rights Reserved.
+    </div>
+
   </div>
+
 </body>
 
 </html>
